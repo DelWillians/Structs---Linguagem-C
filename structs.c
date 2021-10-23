@@ -20,6 +20,8 @@ int main()
 {
   int op;
 
+  printf("\n Bem vindo ao Aprendizado de Structs\n");
+
   printf("\n---------------------------------");
   printf("\n [1] Exemplo1_Struct");
   printf("\n [2] Exemplo2_Struct");
