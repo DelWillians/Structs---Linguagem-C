@@ -18,9 +18,26 @@ void Exemplo2_Struct();
 
 int main()
 {
+  int op;
 
-  //Exemplo1_Struct();
-  Exemplo2_Struct();
+  printf("\n---------------------------------");
+  printf("\n [1] Exemplo1_Struct");
+  printf("\n [2] Exemplo2_Struct");
+  printf("\n---------------------------------");
+
+  printf("\nEscolha uma opcao para executar: ");
+  scanf("%d", &op);
+  fflush(stdin);
+
+  switch (op)
+  {
+  case 1:
+    Exemplo1_Struct();
+    break;
+  case 2:
+    Exemplo2_Struct();
+    break;
+  }
 
   return 0;
 }
@@ -58,7 +75,7 @@ void Exemplo1_Struct()
   printf("\n Nota 2: %.2f", fatec.n2);
   printf("\n Nota 3: %.2f", fatec.n3);
   printf("\n Nota 4: %.2f\n", fatec.n4);
-  printf("\n Media: %.1f", media);
+  printf("\n Media: %.1f\n", media);
 }
 
 void Exemplo2_Struct()
@@ -102,4 +119,3 @@ void Exemplo2_Struct()
     printf("\n Media do Aluno %.2f\n", media);
   }
 }
-
